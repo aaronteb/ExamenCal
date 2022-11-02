@@ -22,6 +22,7 @@ namespace ConsoleApplication15
                 Console.WriteLine("+ para sumar");
                 Console.WriteLine("- para restar");
                 Console.WriteLine("* para multipicar");
+                Console.WriteLine("/ para dividir");
                 Console.Write("n Eliga Una Opcion: "); //Aqui es donde indicaremos que operacion vamos a realizar
                 resp = Console.ReadLine();
                 string eleccion = Convert.ToString(resp);
@@ -51,6 +52,11 @@ namespace ConsoleApplication15
                         R = valor1 * valor2;
                         Console.WriteLine("{2} * {2} = {4}", valor1, valor2, R);
                         break;               
+                  case "/":
+                        Console.WriteLine("El resultado de la division es:");
+                        R = valor1 / valor2;
+                        Console.WriteLine("{0} / {1} = {2}", valor1, valor2, R);
+                        break;
                 Console.Write("n¿Desea Continuar? s/n: "); //Si para realizarlo de nuevo y no para salir.
                 resp = Console.ReadLine();
             }
