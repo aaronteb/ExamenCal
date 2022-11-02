@@ -46,12 +46,11 @@ namespace ConsoleApplication15
                         R = valor1 - valor2;
                         Console.WriteLine("{0} - {1} = {2}", valor1, valor2, R);
                         break;
-                case"*":
-                Console.WriteLine("El resultado de la multipicacion es:");
+                    case"*":
+                        Console.WriteLine("El resultado de la multipicacion es:");
                         R = valor1 * valor2;
                         Console.WriteLine("{2} * {2} = {4}", valor1, valor2, R);
-                        break;
-                
+                        break;               
                 Console.Write("n¿Desea Continuar? s/n: "); //Si para realizarlo de nuevo y no para salir.
                 resp = Console.ReadLine();
             }
