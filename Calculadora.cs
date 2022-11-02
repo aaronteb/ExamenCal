@@ -20,6 +20,7 @@ namespace ConsoleApplication15
                 //Aqui mostraremos los mensajes que apareceran en nuestra consola igual que el menu de seleccion.
                 Console.WriteLine("Presione el simbolo para realizar la operacion:n");
                 Console.WriteLine("+ para sumar");
+                Console.WriteLine("- para restar");
                 Console.Write("n Eliga Una Opcion: "); //Aqui es donde indicaremos que operacion vamos a realizar
                 resp = Console.ReadLine();
                 string eleccion = Convert.ToString(resp);
@@ -39,6 +40,11 @@ namespace ConsoleApplication15
                         Console.WriteLine("{0} + {1} = {2}", valor1, valor2, R);
                         break;
                         }
+                    case "-":
+                        Console.WriteLine("El resultado de la resta es:");
+                        R = valor1 - valor2;
+                        Console.WriteLine("{0} - {1} = {2}", valor1, valor2, R);
+                        break;
                 Console.Write("n¿Desea Continuar? s/n: "); //Si para realizarlo de nuevo y no para salir.
                 resp = Console.ReadLine();
             }
